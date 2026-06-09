@@ -1,17 +1,17 @@
 {
-  "_comment": "Merge this into your project .claude/settings.json. Adjust the absolute path to pixelpilot-hook.mjs. Set PIXELPILOT_CMD if pixelpilot isn't on PATH.",
+  "_comment": "Merge into your project .claude/settings.json. Replace /ABSOLUTE/PATH/TO/pixelpilot with where you cloned this repo. Set PIXELPILOT_CMD (e.g. 'npx tsx /ABSOLUTE/PATH/TO/pixelpilot/src/cli.ts') if `pixelpilot` isn't on your PATH.",
   "hooks": {
     "PostToolUse": [
       {
         "matcher": "Edit|Write",
         "type": "command",
-        "command": "node /Users/manavpatel/Desktop/ppl/pixelpilot/hooks/pixelpilot-hook.mjs"
+        "command": "node /ABSOLUTE/PATH/TO/pixelpilot/hooks/pixelpilot-hook.mjs"
       }
     ],
     "Stop": [
       {
         "type": "command",
-        "command": "node /Users/manavpatel/Desktop/ppl/pixelpilot/hooks/pixelpilot-hook.mjs"
+        "command": "node /ABSOLUTE/PATH/TO/pixelpilot/hooks/pixelpilot-hook.mjs"
       }
     ]
   }

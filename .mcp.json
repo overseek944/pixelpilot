@@ -1,10 +1,10 @@
 {
-  "_comment": "Copy into your project root (or run: claude mcp add pixelpilot -- npx tsx /abs/path/pixelpilot/src/mcp/server.ts). After build, prefer: node /abs/path/pixelpilot/dist/mcp/server.js",
+  "_comment": "Copy into your project root and replace /ABSOLUTE/PATH/TO/pixelpilot with where you cloned this repo. Or just run: claude mcp add pixelpilot -- npx tsx /ABSOLUTE/PATH/TO/pixelpilot/src/mcp/server.ts  (after `npm run build`, prefer: node /ABSOLUTE/PATH/TO/pixelpilot/dist/mcp/server.js).",
   "mcpServers": {
     "pixelpilot": {
       "type": "stdio",
       "command": "npx",
-      "args": ["tsx", "/Users/manavpatel/Desktop/ppl/pixelpilot/src/mcp/server.ts"]
+      "args": ["tsx", "/ABSOLUTE/PATH/TO/pixelpilot/src/mcp/server.ts"]
     }
   }
 }
