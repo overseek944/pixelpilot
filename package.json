@@ -3,6 +3,31 @@
   "version": "0.1.0",
   "type": "module",
   "description": "Visual-oracle engine for pixel-perfect UI migration: capture rendered ground truth, diff a target against it, and gate/dispatch AI migration work until the pixels match.",
+  "license": "MIT",
+  "author": "Manav Patel (overseek944)",
+  "homepage": "https://github.com/overseek944/pixelpilot#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/overseek944/pixelpilot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/overseek944/pixelpilot/issues"
+  },
+  "keywords": [
+    "ui-migration",
+    "visual-regression",
+    "pixel-perfect",
+    "playwright",
+    "pixelmatch",
+    "ssim",
+    "mcp",
+    "claude-code",
+    "ai-agents",
+    "screenshot-diff"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
   "bin": {
     "pixelpilot": "./dist/cli.js"
   },
