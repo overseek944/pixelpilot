@@ -1,0 +1,18 @@
+{
+  "_comment": "Merge this into your project .claude/settings.json. Adjust the absolute path to pixelpilot-hook.mjs. Set PIXELPILOT_CMD if pixelpilot isn't on PATH.",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "type": "command",
+        "command": "node /Users/manavpatel/Desktop/ppl/pixelpilot/hooks/pixelpilot-hook.mjs"
+      }
+    ],
+    "Stop": [
+      {
+        "type": "command",
+        "command": "node /Users/manavpatel/Desktop/ppl/pixelpilot/hooks/pixelpilot-hook.mjs"
+      }
+    ]
+  }
+}

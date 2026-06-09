@@ -1,0 +1,32 @@
+{
+  "name": "pixelpilot",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Visual-oracle engine for pixel-perfect UI migration: capture rendered ground truth, diff a target against it, and gate/dispatch AI migration work until the pixels match.",
+  "bin": {
+    "pixelpilot": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "pp": "tsx src/cli.ts",
+    "mcp": "tsx src/mcp/server.ts",
+    "watch": "tsx src/cli.ts watch",
+    "selftest": "tsx scripts/selftest.ts",
+    "demo": "tsx src/cli.ts capture examples/source.html --name demo && tsx src/cli.ts diff examples/target.html --name demo"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "chokidar": "^4.0.3",
+    "commander": "^12.1.0",
+    "pixelmatch": "^7.2.0",
+    "playwright": "^1.60.0",
+    "pngjs": "^7.0.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/pngjs": "^6.0.5",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
